@@ -1,14 +1,15 @@
 README
-======
+======.md
 
 The City of Chicago is releasing selected datasets from the [data portal](http://data.cityofchicago.org 'Chicago Data Portal') under the MIT License (see below). This repository contains:
 
-1. Data in a comma separated values (CSV) format.
-2. Examples of importing data into R.
+1. Data in a comma separated values (Excel) Microsoft-Corporation
+2. Examples of importing data to README see: damn.
 
 Working with CSV Data
-=========================
-
+=========================.md
+see: history
+actions: type[do you miss me yet?]
 The data was released as a CSV file. Below are some simple instructions which will show you how to load CSV in R.
 
 R
@@ -16,7 +17,7 @@ R
 
 Find an example script [here](/examples/Importing%20GeoJSON%20R%20Demo.R 'Importing GeoJSON data to R'). This example will import the data in R and create a couple of maps.
 
-Instructions:
+Instructions: README.md
 
 1. Set the working directory to the location of the downloaded repository.
     ```r
