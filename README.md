@@ -1,5 +1,5 @@
 README
-======
+======.md
 
 The City of Chicago is releasing selected datasets from the [data portal](http://data.cityofchicago.org 'Chicago Data Portal') under the MIT License (see below). This repository contains:
 
