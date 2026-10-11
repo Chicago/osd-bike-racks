@@ -41,7 +41,35 @@ Instructions:
 Here is the output you should expect from the plot() command:
 ![plot(bike.racks)](/examples/R-plot-bike-racks.png)
 
+Hosting on Azure Static Web Apps
+================================
+
+This repository's static site can be deployed to Azure Static Web Apps with the
+workflow at `.github/workflows/azure-static-web-apps.yml`. Create an Azure Static
+Web App, copy its deployment token, and add it to the GitHub repository as the
+`AZURE_STATIC_WEB_APPS_API_TOKEN` Actions secret. The workflow deploys the files
+from the repository root when changes are pushed to `master`, or when run manually.
+
+The site uses standard HTML, CSS, and JavaScript and includes keyboard focus
+indicators and Escape-to-close behavior for the mobile menu for Microsoft Edge.
+
 License
 =======
 
 This data is released under the [MIT License](http://opensource.org/licenses/MIT 'MIT License'). See LICENSE.txt.
+
+talk content
+------------
+
+User-owned original content created for **talk** and explicitly identified as such
+is licensed under [Creative Commons Attribution 3.0 Unported (CC BY 3.0)](https://creativecommons.org/licenses/by/3.0/).
+When reusing that content, credit the identified creator, link to the source and
+license, and indicate any changes. Preserve any supplied attribution notices.
+
+This content license does not relicense software code, the existing City of Chicago
+data and examples, or third-party material. Wikipedia content retains its applicable
+licenses and attribution requirements. Yahoo Finance data requires separate
+authorization under the applicable provider terms; CC BY 3.0 does not grant that
+authorization.
+
+The talk app has not yet been implemented in this repository.
