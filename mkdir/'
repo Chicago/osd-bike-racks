@@ -1,0 +1,73 @@
+# GitHubStatusMonitor
+
+GitHubStatusMonitor is a C++ project configured with CMake. It defines region-specific minimum-version metadata, stores the values for reuse across the build, and builds an executable named `GitHubStatusMonitor` from `main.cpp`.
+
+## Overview
+
+This project is structured to support multiple deployment regions:
+
+- AU (Australia)
+- EU (Europe)
+- JP (Japan)
+- US (United States)
+
+Each region has a minimum version value, defaulting to `1.0.0` unless explicitly provided.
+
+## Configuration
+
+The build configuration defines the following variables:
+
+- `AU_MINIMUM_VERSION`
+- `EU_MINIMUM_VERSION`
+- `JP_MINIMUM_VERSION`
+- `US_MINIMUM_VERSION`
+
+These values are merged into a combined list:
+
+- `STATUS_LOCATIONS`
+
+Example output format:
+
+- `AU:1.0.0`
+- `EU:1.0.0`
+- `JP:1.0.0`
+- `US:1.0.0`
+
+## Build Requirements
+
+- CMake
+- C++17 compatible compiler
+- `main.cpp` source file
+
+## Build Instructions
+
+From the project root:
+
+```bash
+mkdir build
+cd build
+cmake ..
+cmake --build .
+```
+
+This will generate the executable:
+
+```bash
+./GitHubStatusMonitor
+```
+
+## Project Settings
+
+The configuration includes:
+
+- C++17 standard enabled
+- `CMAKE_CXX_STANDARD_REQUIRED` set to `ON`
+- Executable target created from `main.cpp`
+
+## Notes
+
+This project currently appears to be a minimal CMake setup for a status-monitoring tool that tracks region-based metadata and exposes it through configuration variables and build-time status messages.
+
+## License
+
+This project does not specify a license in the configuration file. Add a license if you intend to distribute it publicly.

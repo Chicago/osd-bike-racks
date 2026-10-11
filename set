@@ -1,0 +1,34 @@
+@echo off
+setlocal EnableDelayedExpansion
+
+echo GitHub Status Locations Configuration
+echo =====================================
+echo.
+
+set /p AU_VERSION="Enter AU (Australia) minimum version (default: 1.0.0): "
+if "!AU_VERSION!"=="" set "AU_VERSION=1.0.0"
+
+set /p EU_VERSION="Enter EU (Europe) minimum version (default: 1.0.0): "
+if "!EU_VERSION!"=="" set "EU_VERSION=1.0.0"
+
+set /p JP_VERSION="Enter JP (Japan) minimum version (default: 1.0.0): "
+if "!JP_VERSION!"=="" set "JP_VERSION=1.0.0"
+
+set /p US_VERSION="Enter US (United States) minimum version (default: 1.0.0): "
+if "!US_VERSION!"=="" set "US_VERSION=1.0.0"
+
+echo.
+echo Configuration Summary:
+echo AU: !AU_VERSION!
+echo EU: !EU_VERSION!
+echo JP: !JP_VERSION!
+echo US: !US_VERSION!
+echo.
+
+cmake -S . -B build ^
+  -DAU_MINIMUM_VERSION=!AU_VERSION! ^
+  -DEU_MINIMUM_VERSION=!EU_VERSION! ^
+  -DJP_MINIMUM_VERSION=!JP_VERSION! ^
+  -DUS_MINIMUM_VERSION=!US_VERSION!
+
+pause
